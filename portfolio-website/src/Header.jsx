@@ -21,6 +21,10 @@ function Header(){
                     
             </nav>
 
+            <div className="circle-container">
+                <div className="circle" />
+            </div>
+            
             <div className = "title">
                 <h1>Hi! I'm Celina!</h1>
                 <p>self-taught software developer</p>
