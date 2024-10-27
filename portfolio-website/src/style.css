@@ -33,18 +33,6 @@ li a {
   flex: 1;
 }
 
-
-.rightNav {
-  margin-top: -19px;
-  position: relative;
-  transform: translate(-20px, 0);
-  
-  
-  float: right;
-  align-items: center;
-  gap: 10px;
-}
-
 ul {
   display: flex;
   align-items: center;
@@ -62,7 +50,6 @@ ul {
 .circle {
   width: 200px;
   height: 200px;
-  transform: translate(20px, 0);
 
   border-radius: 50%;
   background: rgb(229, 64, 152);
