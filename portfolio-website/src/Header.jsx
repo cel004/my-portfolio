@@ -8,9 +8,9 @@ function Header(){
         <header>
             <nav>
                     <ul className = "centerNav">
-                        <li><a href = "home">home</a></li>
-                        <li><a href = "projects">projects</a></li>
-                        <li><a href = "contact">contact</a></li>
+                        <li><a href = "#">home</a></li>
+                        <li><a href = "#">projects</a></li>
+                        <li><a href = "#">contact</a></li>
                     </ul>
             </nav>
 
