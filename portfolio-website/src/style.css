@@ -12,6 +12,7 @@
   src: url('./assets/Wotfard/Wotfard-Regular.otf'); /* Locate the .ttf file within your directory*/
 }
 
+
 li a {
   margin-left: -30px;
   text-decoration: none;
@@ -34,4 +35,8 @@ a {
   display: flex;
   justify-content: center;
   gap: 5px;
+}
+
+#email {
+  margin-top: -3px;
 }
