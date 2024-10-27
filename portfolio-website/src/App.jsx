@@ -1,7 +1,7 @@
 import Header from './Header.jsx'
 
 
-function Website() {
+function App() {
 
   return(
     <>
@@ -13,4 +13,4 @@ function Website() {
 
 }
 
-export default Website
+export default App

@@ -1,6 +1,5 @@
 import { LineMdEmail } from './assets/iconEmail';
 
-
 function Header(){
 
     return(
@@ -12,8 +11,11 @@ function Header(){
                     <li><a href = "contact">contact</a></li>
                 </ul>
             </nav>
-            <h1>hi! i'm celina!</h1>
-            <p>self-taught software developer</p>
+
+            <div className ="title">
+                <h1>hi! i'm celina!</h1>
+                <p>self-taught software developer</p>
+            </div>
             <a href="mailto:name@gmail.com">
                 <LineMdEmail></LineMdEmail>
                 name@gmail.com
