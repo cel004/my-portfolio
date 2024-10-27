@@ -7,17 +7,18 @@ function Header(){
     return(
         <header>
             <nav>
-                <ul>
-                    
-                    <li><a href = "home">home</a></li>
-                    <li><a href = "projects">projects</a></li>
-                    <li><a href = "contact">contact</a></li>
-
-                    <div className='contact-icons'>
-                        <li><a href="linkedin"></a><LineMdLinkedin/ ></li>
-                        <li><a href="github"></a><LineMdGithub/ ></li>
+                  <div className = "headerNav">
+                    <ul className = "centerNav">
+                        <li><a href = "home">home</a></li>
+                        <li><a href = "projects">projects</a></li>
+                        <li><a href = "contact">contact</a></li>
+                    </ul>
                     </div>
-                </ul>
+                    <ul className='rightNav'>
+                        <li><a href="linkedin"></a><LineMdLinkedin /></li>
+                        <li><a href="github"></a><LineMdGithub /></li>
+                    </ul>
+                    
             </nav>
 
             <div className = "title">
@@ -25,10 +26,11 @@ function Header(){
                 <p>self-taught software developer</p>
             </div>
             
-                <a href="mailto:name@gmail.com">
-                <LineMdEmail />
+            <div className = "section-email">
+                <a href="mailto:name@gmail.com"><LineMdEmail /></a>
                 <div id = "email">name@gmail.com</div>
-                </a>
+            </div>
+                
             
         </header>
     )
