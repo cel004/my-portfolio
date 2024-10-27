@@ -67,3 +67,16 @@ ul {
 #email {
   margin-top: -1px;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+
+}
