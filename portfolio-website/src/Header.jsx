@@ -13,7 +13,7 @@ function Header(){
             </nav>
 
             <div className ="title">
-                <h1>hi! i'm celina!</h1>
+                <h1>Hi! I'm Celina!</h1>
                 <p>self-taught software developer</p>
             </div>
             <a href="mailto:name@gmail.com">

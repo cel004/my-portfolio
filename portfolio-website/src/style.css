@@ -1,10 +1,15 @@
 * {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Wotfard', sans-serif; 
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgb(41, 41, 41);
-  background-color: #eceadb;
+  background-color: #f0f0f0;
+}
+
+@font-face {
+  font-family: 'Wotfard'; /* Name your font family */
+  src: url('./assets/Wotfard/Wotfard-Regular.otf'); /* Locate the .ttf file within your directory*/
 }
 
 li a {
