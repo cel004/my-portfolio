@@ -27,9 +27,9 @@ function Header(){
                 
                 <div id = "email">celsnguyen@gmail.com</div>
                 <ul className = "contacts">
-                    <li><a href="linkedin"></a><LineMdLinkedin /></li>
-                    <li><a href="mailto:name@gmail.com"></a><LineMdEmail /></li>
-                    <li><a href="github"></a><LineMdGithub /></li>
+                    <li><a href="#"></a><LineMdLinkedin /></li>
+                    <li><a href="mailto:#@gmail.com"></a><LineMdEmail /></li>
+                    <li><a href="#"></a><LineMdGithub /></li>
                 </ul>
             </div>
                 
