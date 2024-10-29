@@ -1,4 +1,4 @@
-import './Aura.module.css'
+import styles from './Aura.module.css'
 
 function Aura(){
 

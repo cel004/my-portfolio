@@ -1,4 +1,4 @@
-import './Header.module.css'
+import styles from './Header.module.css'
 
 import { LineMdEmail } from '../assets/iconEmail';
 import { LineMdLinkedin } from '../assets/iconLinkedin';
