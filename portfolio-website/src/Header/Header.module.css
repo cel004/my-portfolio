@@ -1,0 +1,13 @@
+.section-email {
+    display: flex;
+}
+
+.contacts {
+    margin-left: 10px;
+    gap: 5px;
+}
+
+ul {
+    align-items: center;
+    list-style-type: none;
+}

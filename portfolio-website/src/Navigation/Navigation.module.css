@@ -1,0 +1,9 @@
+.centerNav, .contacts, ul {
+    display: flex;
+}
+
+.centerNav {
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+}

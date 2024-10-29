@@ -1,0 +1,13 @@
+.circle-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .circle {
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #EFCFE3 0%, #B3DEE2 100%);
+    filter: blur(25px);
+  }
