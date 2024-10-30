@@ -3,8 +3,8 @@ import styles from './Aura.module.css'
 function Aura(){
 
     return(
-    <div className="circle-container">
-        <div className="circle" />
+    <div className={styles.circleContainer}>
+        <div className={styles.circle} />
         </div>
 
     )
