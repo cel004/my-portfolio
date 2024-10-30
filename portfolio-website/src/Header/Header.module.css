@@ -19,11 +19,11 @@ ul {
     margin-top: 50px;
     }
     
-    .section-email {
+.sectionEmail {
     justify-content: center;
     gap: 5px;
-    }
+}
     
-    #email {
+#email {
     margin-top: -1px;
-    }
+}
