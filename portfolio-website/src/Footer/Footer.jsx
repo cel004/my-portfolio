@@ -5,7 +5,7 @@ function Footer(){
     return(
         <>
         <hr></hr>
-        <p className ="copyright">&copy; {new Date().getFullYear()} Celina Nguyen</p>
+        <p className ={styles.copyright}>&copy; {new Date().getFullYear()} Celina Nguyen</p>
         </>
 
     )

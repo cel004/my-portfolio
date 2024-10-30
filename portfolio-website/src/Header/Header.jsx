@@ -9,15 +9,15 @@ function Header(){
     return(
         <header>
 
-            <div className = "title">
+            <div className = {styles.title}>
                 <h1>Hi! I'm Celina!</h1>
                 <p></p>
             </div>
             
-            <div className = "section-email">
+            <div className = {styles.sectionEmail}>
                 
-                <div id = "email">celsnguyen@gmail.com</div>
-                <ul className = "contacts">
+                <div id = {styles.email}>celsnguyen@gmail.com</div>
+                <ul className = {styles.contacts}>
                     <li><a href="#"></a><LineMdLinkedin /></li>
                     <li><a href="mailto:#@gmail.com"></a><LineMdEmail /></li>
                     <li><a href="#"></a><LineMdGithub /></li>
