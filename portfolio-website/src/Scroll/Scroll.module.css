@@ -1,20 +1,22 @@
 .scroller {
     overflow: hidden;
-    white-space: nowrap;
     width: 100%;
     max-width: 400px;
     position: relative;
 }
 
 .scrollList {
-    display: inline-flex; /* allows horizontal scroll */
-    animation: scroll 10s linear infinite;
-    will-change: transform;
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    width: max-content;
 }
 
 .scrollList li {
-    display: inline-block;
-    padding: 5px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes scroll {
@@ -22,6 +24,30 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-50%); 
     }
+}
+
+.scroller[data-animated="true"] .scrollList {
+    animation: scroll 20s linear infinite; 
+}
+
+.scroller::before,
+.scroller::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    z-index: 2;
+}
+
+.scroller::before {
+    left: 0;
+    background: linear-gradient(to right, #f0f0f0, transparent);
+}
+
+.scroller::after {
+    right: 0;
+    background: linear-gradient(to left, #f0f0f0, transparent);
 }
