@@ -1,0 +1,27 @@
+.scroller {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+}
+
+.scrollList {
+    display: inline-flex; /* allows horizontal scroll */
+    animation: scroll 10s linear infinite;
+    will-change: transform;
+}
+
+.scrollList li {
+    display: inline-block;
+    padding: 5px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
