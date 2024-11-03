@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import styles from './NightMode.module.css'
 
+import { LineMdSunnyOutlineToMoonAltLoopTransition } from '../assets/iconLinkedin';
+import { LineMdSunRisingLoop } from '../assets/iconGithub';
+
 const NightMode = () => {
     const [isNightMode, setIsNightMode] = useState(false);
 
