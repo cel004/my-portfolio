@@ -1,9 +1,11 @@
-.centerNav, .contacts, ul {
+.centerNav, ol {
     display: flex;
+    flex-direction: column;
 }
 
 .centerNav {
     margin-top: 50px;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
+    font-size: 2rem;
 }

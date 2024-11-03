@@ -7,9 +7,9 @@ function App() {
 
   return(
     <>
-    <Navigation />
-    <Header />
     <Aura />
+    <Header />
+    <Navigation />
     <Footer />
     </>
     

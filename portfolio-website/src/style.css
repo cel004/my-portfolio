@@ -2,8 +2,6 @@
 font-family: 'Wotfard', sans-serif;
 color: rgb(41, 41, 41);
 background-color: #f0f0f0;
-margin: 0;
-padding: 0;
 }
 
 @font-face {
@@ -11,9 +9,11 @@ font-family: 'Wotfard';
 src: url('./assets/Wotfard/Wotfard-Regular.otf');
 }
 
-/* body {
+body {
+margin: 10px;
+padding: 0;
 color-scheme: light dark;
-} */
+}
 
 a {
 text-decoration: none;
