@@ -1,8 +1,10 @@
 .scroller {
     overflow: hidden;
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
     position: relative;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .scrollList {

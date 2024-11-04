@@ -9,3 +9,7 @@
     align-items: flex-start;
     font-size: 2rem;
 }
+
+.centerNav ol li {
+    font-weight: bold;
+}
