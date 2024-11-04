@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import styles from './Scroll.module.css'
+import styles from './Scroll.module.css';
 
 import { FlowbiteCssSolid } from '../assets/Skill/iconCSS';
 import { FlowbiteHtmlSolid } from '../assets/Skill/iconHTML';
@@ -10,9 +10,35 @@ function Scroll() {
     const scrollerRef = useRef(null);
 
     useEffect(() => {
-        if (scrollerRef.current) {
-            scrollerRef.current.setAttribute('data-animated', 'true');
+        // Check for reduced motion preference
+        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+            addAnimation();
         }
+
+        function addAnimation() {
+            const scroller = scrollerRef.current;
+
+            if (scroller) {
+                scroller.setAttribute("data-animated", "true");
+
+                const scrollerInner = scroller.querySelector(`.${styles.scrollList}`);
+                const scrollerContent = Array.from(scrollerInner.children);
+
+                // Clone each item and append to the inner scroller
+                scrollerContent.forEach((item) => {
+                    const duplicatedItem = item.cloneNode(true);
+                    duplicatedItem.setAttribute("aria-hidden", true);
+                    scrollerInner.appendChild(duplicatedItem);
+                });
+            }
+        }
+
+        return () => {
+            const scroller = scrollerRef.current;
+            if (scroller) {
+                scroller.removeAttribute("data-animated");
+            }
+        };
     }, []);
 
     const icons = [
@@ -22,12 +48,10 @@ function Scroll() {
         { Component: LineiconsJavascript, alt: "JavaScript" }
     ];
 
-    const duplicateIcons = [...icons, ...icons];
-
     return (
         <div className={styles.scroller} ref={scrollerRef}>
             <ul className={styles.scrollList}>
-                {duplicateIcons.map(({ Component, alt }, index) => (
+                {icons.map(({ Component, alt }, index) => (
                     <li key={`icon-${index}`}>
                         <Component aria-label={alt} />
                     </li>
