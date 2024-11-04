@@ -1,15 +1,18 @@
-import styles from './Aura.module.css'
+import React from 'react';
+import styles from './Aura.module.css';
 
-const Aura = () => {
+function Aura() {
     return (
-        <div className = {styles.circleContainer}>
-            <div id="up" className = {styles.animatedCircle}></div>
-            <div id="down" className = {styles.animatedCircle}></div>
-            <div id="left" className = {styles.animatedCircle}></div>
-            <div id="right" className = {styles.animatedCircle}></div>
-            <div className= {styles.circle}></div>
+        <div className={styles.auraWrapper}>
+            <div className={styles.circleContainer}>
+                <div className={styles.auraEffect}>
+                    <div className={styles.auraLayer}></div>
+                </div>
+                <div className={styles.circle}></div>
+                <div className={styles.shimmer}></div>
+            </div>
         </div>
     );
-};
+}
 
 export default Aura;
