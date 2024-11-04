@@ -10,7 +10,7 @@ function Scroll() {
     const scrollerRef = useRef(null);
 
     useEffect(() => {
-        // Check for reduced motion preference
+        // checks for reduced motion preference
         if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
             addAnimation();
         }
@@ -24,7 +24,7 @@ function Scroll() {
                 const scrollerInner = scroller.querySelector(`.${styles.scrollList}`);
                 const scrollerContent = Array.from(scrollerInner.children);
 
-                // Clone each item and append to the inner scroller
+                // clone each item then append to inner scroller
                 scrollerContent.forEach((item) => {
                     const duplicatedItem = item.cloneNode(true);
                     duplicatedItem.setAttribute("aria-hidden", true);

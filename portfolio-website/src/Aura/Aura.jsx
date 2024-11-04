@@ -1,13 +1,15 @@
 import styles from './Aura.module.css'
 
-function Aura(){
-
-    return(
-    <div className={styles.circleContainer}>
-        <div className={styles.circle} />
+const Aura = () => {
+    return (
+        <div className = {styles.circleContainer}>
+            <div id="up" className = {styles.animatedCircle}></div>
+            <div id="down" className = {styles.animatedCircle}></div>
+            <div id="left" className = {styles.animatedCircle}></div>
+            <div id="right" className = {styles.animatedCircle}></div>
+            <div className= {styles.circle}></div>
         </div>
+    );
+};
 
-    )
-}
-
-export default Aura
+export default Aura;
