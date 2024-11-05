@@ -5,11 +5,10 @@ function Aura() {
     return (
         <div className={styles.auraWrapper}>
             <div className={styles.circleContainer}>
-                <div className={styles.auraEffect}>
-                    <div className={styles.auraLayer}></div>
-                </div>
-                <div className={styles.circle}></div>
-                <div className={styles.shimmer}></div>
+                <div className={styles.auraLayer1}></div>
+                <div className={styles.auraLayer2}></div>
+                <div className={styles.auraLayer3}></div>
+                <div className={styles.auraLayer4}></div>
             </div>
         </div>
     );

@@ -1,9 +1,9 @@
 .auraWrapper {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 15rem;
+  height: 15rem;
   margin: 0 auto;
-  padding: 30px;
+  padding: 1.875rem;
 }
 
 .circleContainer {
@@ -12,43 +12,58 @@
   height: 100%;
   border-radius: 50%;
   overflow: hidden;
-  filter: blur(20px);
+  filter: blur(0.8rem);
 }
 
-.circle {
+.auraLayer1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: linear-gradient(80deg, #b1ccb8, #dda6e8, #bedfe6);
-  filter: blur(25px);
-  z-index: 2;
-}
-
-.auraEffect {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  z-index: 1;
-  overflow: hidden;
-}
-
-.auraLayer {
-  position: absolute;
-  width: 200%;
-  height: 200%;
+  width: 20rem;
+  height: 20rem;
   top: -50%;
   left: -50%;
-  background: linear-gradient(80deg, #b7b1cc, #a7e4e9, #f8f7cf, #dda6e8);
-  filter: blur(40px);
+  background: linear-gradient(160deg, #e2beff, #d0ffd4, #ffc8f1);
+
+  filter: blur(2rem);
+  animation: rotateAura1 10s linear infinite;
+
+}
+
+.auraLayer2 {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(80deg, #b9a6ff, #bdfaff, #fffecb, #f3b8ff);
+
+  filter: blur(2rem);
   animation: rotateAura 20s linear infinite;
 }
+
+.auraLayer3 {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(80deg, #f7ffcc, #bdfaff, #f3b8ff);
+
+  filter: blur(2rem);
+  animation: rotateAura 10s linear infinite;
+}
+
+.auraLayer4 {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(160deg, #b9a6ff, #bdfaff, #ffddf7, #f3b8ff);
+
+  filter: blur(2rem);
+  animation: rotateAura 20s linear infinite;
+}
+
 
 @keyframes rotateAura {
   0% {
@@ -59,26 +74,12 @@
   }
 }
 
-.shimmer {
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  animation: shimmer 6s linear infinite;
-}
 
-@keyframes shimmer {
+@keyframes rotateAura1 {
   0% {
-    left: -100%;
+    transform: rotate(360deg);
   }
   100% {
-    left: 100%;
+    transform: rotate(0deg);
   }
 }
