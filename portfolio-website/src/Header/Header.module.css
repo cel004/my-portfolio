@@ -12,6 +12,11 @@ ul {
     width: 70%;
 }
 
+.socialIcons {
+    width: auto;
+    gap: 0.25rem;
+}
+
 h1, p, #contacts {
     font-weight: 600;
 }
@@ -30,10 +35,3 @@ ul {
     margin: 0;
 }
 
-/* #email {
-    margin-top: -1px;
-} */
-
-/* #linkedinButton {
-    margin-bottom: -1px;
-} */

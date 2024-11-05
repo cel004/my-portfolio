@@ -15,7 +15,6 @@ function Header(){
                 <div id = {styles.contacts}>celsnguyen@gmail.com
                     <div className = {styles.socialIcons}>
                         <a href="#"></a><LineMdLinkedin />
-                        <a href="mailto:#@gmail.com"></a><LineMdEmail />
                         <a href="#"></a><LineMdGithub />
                     </div>
                 </div>
