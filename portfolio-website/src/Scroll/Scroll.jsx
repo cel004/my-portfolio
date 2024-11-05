@@ -8,49 +8,35 @@ import { LineiconsJavascript } from '../assets/Skill/iconJS';
 import { MingcuteLinuxFill } from '../assets/Skill/iconLinux';
 import { MdiGit } from '../assets/Skill/iconGit';
 
+const icons = [
+    { Component: FlowbiteCssSolid, alt: "CSS" },
+    { Component: FlowbiteHtmlSolid, alt: "HTML" },
+    { Component: MdiReact, alt: "React" },
+    { Component: LineiconsJavascript, alt: "JavaScript" },
+    { Component: MingcuteLinuxFill, alt: "Linux" },
+    { Component: MdiGit, alt: "Git" }
+];
+
 function Scroll() {
     const scrollerRef = useRef(null);
 
     useEffect(() => {
-        // checks for reduced motion preference
-        if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-            addAnimation();
-        }
+        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
-        function addAnimation() {
-            const scroller = scrollerRef.current;
+        const scroller = scrollerRef.current;
+        if (!scroller) return;
 
-            if (scroller) {
-                scroller.setAttribute("data-animated", "true");
+        scroller.setAttribute("data-animated", "true");
+        const scrollerInner = scroller.querySelector(`.${styles.scrollList}`);
+        
+        Array.from(scrollerInner.children).forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.setAttribute("aria-hidden", true);
+            scrollerInner.appendChild(clone);
+        });
 
-                const scrollerInner = scroller.querySelector(`.${styles.scrollList}`);
-                const scrollerContent = Array.from(scrollerInner.children);
-
-                // clone each item then append to inner scroller
-                scrollerContent.forEach((item) => {
-                    const duplicatedItem = item.cloneNode(true);
-                    duplicatedItem.setAttribute("aria-hidden", true);
-                    scrollerInner.appendChild(duplicatedItem);
-                });
-            }
-        }
-
-        return () => {
-            const scroller = scrollerRef.current;
-            if (scroller) {
-                scroller.removeAttribute("data-animated");
-            }
-        };
+        return () => scroller.removeAttribute("data-animated");
     }, []);
-
-    const icons = [
-        { Component: FlowbiteCssSolid, alt: "CSS" },
-        { Component: FlowbiteHtmlSolid, alt: "HTML" },
-        { Component: MdiReact, alt: "React" },
-        { Component: LineiconsJavascript, alt: "JavaScript" },
-        { Component: MingcuteLinuxFill, alt: "Linux" },
-        { Component: MdiGit, alt: "Git" }
-    ];
 
     return (
         <div className={styles.scroller} ref={scrollerRef}>

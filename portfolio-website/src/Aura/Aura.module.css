@@ -3,7 +3,9 @@
   width: 15rem;
   height: 15rem;
   margin: 0 auto;
-  padding: 1.875rem;
+  padding: 2rem;
+
+  filter: blur(0.8rem);
 }
 
 .circleContainer {
@@ -13,6 +15,7 @@
   border-radius: 50%;
   overflow: hidden;
   filter: blur(0.8rem);
+  opacity: 70%;
 }
 
 .auraLayer1 {

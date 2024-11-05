@@ -8,7 +8,6 @@ function Header(){
 
     return(
         <header>
-
             <div className = {styles.title}>
                 <h1>Hi! I'm Celina!</h1>
                 <p>software developer</p>

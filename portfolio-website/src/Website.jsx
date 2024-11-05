@@ -4,6 +4,8 @@ import Aura from './Aura/Aura.jsx'
 import Navigation from './Navigation/Navigation.jsx'
 import NightMode from './NightMode/NightMode.jsx';
 import Scroll from './Scroll/Scroll.jsx'
+import Projects from './Projects/Projects.jsx'
+
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
     <Header />
     <Navigation />
     <Scroll />
+    <Projects />
     <Footer />
     </>
     
