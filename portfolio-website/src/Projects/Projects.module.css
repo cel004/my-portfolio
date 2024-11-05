@@ -2,11 +2,6 @@
     margin: 10px;
 }
 
-img {
-    width: 50%;
-    height: auto;
-}
-
 .gallery {
     display: flex;
     overflow-x: auto;
@@ -19,4 +14,8 @@ img {
     height: auto;
     flex-shrink: 0;
     width: 200px;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none; /* hide scrollbar */
 }
