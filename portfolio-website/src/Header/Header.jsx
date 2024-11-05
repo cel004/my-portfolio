@@ -14,8 +14,10 @@ function Header(){
                 <p>software developer</p>
                 <div id = {styles.contacts}>celsnguyen@gmail.com
                     <div className = {styles.socialIcons}>
-                        <a href="#"></a><LineMdLinkedin />
-                        <a href="#"></a><LineMdGithub />
+                        <div className = {styles.socialIconsContainer}>
+                            <a href="https://www.linkedin.com/in/cel-nguyen/" target="_blank"  rel="noopener noreferrer"><LineMdLinkedin /></a>
+                            <a href="https://github.com/cel004" target="_blank"  rel="noopener noreferrer"><LineMdGithub /></a>   
+                        </div>
                     </div>
                 </div>
             </div>

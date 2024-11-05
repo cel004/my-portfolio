@@ -5,16 +5,24 @@ ul {
     align-items: center;
 }
 
-#contacts, .socialIcons {
+#contacts {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 70%;
 }
 
+.socialIconsContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 0.25rem;
+}
+
 .socialIcons {
     width: auto;
-    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
 }
 
 h1, p, #contacts {
