@@ -11,18 +11,20 @@ function Header(){
 
             <div className = {styles.title}>
                 <h1>Hi! I'm Celina!</h1>
-                <p>self-taught software developer</p>
+                <p>software developer</p>
+                <div id = {styles.contacts}>celsnguyen@gmail.com
+                    <div className = {styles.socialIcons}>
+                        <a href="#"></a><LineMdLinkedin />
+                        <a href="mailto:#@gmail.com"></a><LineMdEmail />
+                        <a href="#"></a><LineMdGithub />
+                    </div>
+                </div>
             </div>
             
-            <div className = {styles.sectionEmail}>
+            {/* <div className = {styles.sectionEmail}>
                 
-                <div id = {styles.email}>celsnguyen@gmail.com</div>
-                <ul className = {styles.contacts}>
-                    <li><a href="#" className = "linkedinButton"></a><LineMdLinkedin /></li>
-                    <li><a href="mailto:#@gmail.com"></a><LineMdEmail /></li>
-                    <li><a href="#"></a><LineMdGithub /></li>
-                </ul>
-            </div>
+                
+            </div> */}
                 
             
         </header>

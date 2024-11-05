@@ -1,13 +1,19 @@
 .sectionEmail,
-.contacts,
 ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contacts {
-    gap: 5px;
+#contacts, .socialIcons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+h1, p, #contacts {
+    font-weight: 600;
 }
 
 ul {
