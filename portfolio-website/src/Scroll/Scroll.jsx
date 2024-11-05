@@ -21,8 +21,6 @@ function Scroll() {
     const scrollerRef = useRef(null);
 
     useEffect(() => {
-        if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
         const scroller = scrollerRef.current;
         if (!scroller) return;
 
