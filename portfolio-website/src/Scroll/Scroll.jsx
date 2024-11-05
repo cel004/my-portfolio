@@ -5,6 +5,8 @@ import { FlowbiteCssSolid } from '../assets/Skill/iconCSS';
 import { FlowbiteHtmlSolid } from '../assets/Skill/iconHTML';
 import { MdiReact } from '../assets/Skill/iconReact';
 import { LineiconsJavascript } from '../assets/Skill/iconJS';
+import { MingcuteLinuxFill } from '../assets/Skill/iconLinux';
+import { MdiGit } from '../assets/Skill/iconGit';
 
 function Scroll() {
     const scrollerRef = useRef(null);
@@ -45,7 +47,9 @@ function Scroll() {
         { Component: FlowbiteCssSolid, alt: "CSS" },
         { Component: FlowbiteHtmlSolid, alt: "HTML" },
         { Component: MdiReact, alt: "React" },
-        { Component: LineiconsJavascript, alt: "JavaScript" }
+        { Component: LineiconsJavascript, alt: "JavaScript" },
+        { Component: MingcuteLinuxFill, alt: "Linux" },
+        { Component: MdiGit, alt: "Git" }
     ];
 
     return (
