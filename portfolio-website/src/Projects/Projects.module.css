@@ -23,6 +23,7 @@
 
 .projectDescription {
     text-align: justify; 
+    font-weight: 500;
 }
 
 .gallery::-webkit-scrollbar {

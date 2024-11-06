@@ -1,13 +1,14 @@
 .centerNav, ol {
     display: flex;
     flex-direction: column;
+
 }
 
 .centerNav {
-    margin-top: 50px;
     justify-content: space-around;
     align-items: flex-start;
     font-size: 2rem;
     font-weight: bold;
+    letter-spacing: 0.05em;
 
 }
