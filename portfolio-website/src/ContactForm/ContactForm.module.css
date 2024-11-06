@@ -12,3 +12,36 @@
     max-width: 10rem;
     text-align: justify; 
 }
+
+label {
+    font-family: 'Wotfard', Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+input[type="text"], input[type="email"], input[type=submit], textarea{
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 5px;
+    box-sizing: border-box;
+
+    border: 1px solid #292929;
+    border-radius: 2px;
+    outline: none;
+}
+input[type="text"], input[type="email"]{
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+input[type=submit] {
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+textarea {
+    width: max-content;
+    height: 150px;
+    resize: vertical;
+    font-size: 1rem;
+}

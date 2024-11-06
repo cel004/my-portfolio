@@ -15,8 +15,8 @@ function App() {
     <NightMode />
     <Aura />
     <Header />
-    <Navigation />
     <Scroll />
+    <Navigation />
     <Projects />
     <ContactForm />
     <Footer />

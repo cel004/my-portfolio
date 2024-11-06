@@ -9,7 +9,7 @@ function Header(){
         <header>
             <div className = {styles.title}>
                 <h1>Hi! I'm Celina!</h1>
-                <p>software developer</p>
+                <p>Software developer</p>
                 <div id = {styles.contacts}>celsnguyen@gmail.com
                     <div className = {styles.socialIcons}>
                         <div className = {styles.socialIconsContainer}>
