@@ -69,8 +69,14 @@ textarea {
 
 .errorMessage {
     text-align: center;
-    width: 100%;
-    font-size: 0.9rem;
-    font-weight: 100;
+    width: 103%;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.successMessage {
+    text-align: center;
+    width: 103%;
+    font-size: 1rem;
     margin-top: 5px;
 }

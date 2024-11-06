@@ -7,6 +7,7 @@ function ContactForm() {
     const [email, setEmail] = useState("");
     const [textarea, setTextarea] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
     const submitButton = (event) => {
         event.preventDefault();
@@ -33,10 +34,11 @@ function ContactForm() {
             .then(
                 (response) => {
                     console.log('SUCCESS!', response.status, response.text);
-                    setErrorMessage("Thank you for your message! I'll get back to you shortly."); 
+                    setErrorMessage(""); 
                     setName("");  
                     setEmail("");  
-                    setTextarea("");  // Clears all fields
+                    setTextarea(""); 
+                    setIsSubmitted(true);
                 },
                 (error) => {
                     console.log('FAILED...', error);
@@ -52,34 +54,38 @@ function ContactForm() {
                 <p className={styles.subTitle}>Let's make something special</p>
             </div>
             <div className={styles.formContainer}>
-                <form onSubmit={submitButton}>
-                    <label>Name:
-                        <input 
-                            type="text" 
-                            value={name} 
-                            onChange={(e) => setName(e.target.value)} 
-                            required 
-                        />
-                    </label>
-                    <label>Email:
-                        <input 
-                            type="text" 
-                            value={email} 
-                            onChange={(e) => setEmail(e.target.value)} 
-                            required 
-                        />
-                    </label>
-                    <label>Message:
-                        <textarea 
-                            value={textarea} 
-                            onChange={(e) => setTextarea(e.target.value)} 
-                            required 
-                        />
-                    </label>
-                    {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
-                    <input type="submit" value="Submit" />
-                </form>
-            </div>       
+                {isSubmitted ? (
+                    <p className = {styles.successMessage}>Thank you for your message!</p>
+                ) : (
+                    <form onSubmit={submitButton}>
+                        <label>Name:
+                            <input 
+                                type="text" 
+                                value={name} 
+                                onChange={(e) => setName(e.target.value)} 
+                                required 
+                            />
+                        </label>
+                        <label>Email:
+                            <input 
+                                type="text" 
+                                value={email} 
+                                onChange={(e) => setEmail(e.target.value)} 
+                                required 
+                            />
+                        </label>
+                        <label>Message:
+                            <textarea 
+                                value={textarea} 
+                                onChange={(e) => setTextarea(e.target.value)} 
+                                required 
+                            />
+                        </label>
+                        {errorMessage && <p className={styles.errorMessage}>{errorMessage}</p>}
+                        <input type="submit" value="Submit" />
+                    </form>
+                    )}
+                </div>       
         </div>
     );
 }
