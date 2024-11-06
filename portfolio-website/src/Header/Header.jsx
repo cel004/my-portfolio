@@ -10,7 +10,7 @@ function Header(){
             <div className = {styles.title}>
                 <h1>Hi! I'm Celina!</h1>
                 <p>Software developer</p>
-                <div id = {styles.contacts}>celsnguyen@gmail.com
+                <div id = {styles.contacts}>celnguyens@gmail.com
                     <div className = {styles.socialIcons}>
                         <div className = {styles.socialIconsContainer}>
                             <a href="https://www.linkedin.com/in/cel-nguyen/" target="_blank"  rel="noopener noreferrer"><LineMdLinkedin /></a>
