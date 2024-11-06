@@ -1,6 +1,5 @@
 import styles from './Header.module.css'
 
-import { LineMdEmail } from '../assets/Contact/iconEmail';
 import { LineMdLinkedin } from '../assets/Contact/iconLinkedin';
 import { LineMdGithub } from '../assets/Contact/iconGithub';
 

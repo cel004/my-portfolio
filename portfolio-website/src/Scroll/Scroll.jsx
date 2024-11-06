@@ -9,12 +9,12 @@ import { MingcuteLinuxFill } from '../assets/Skill/iconLinux';
 import { MdiGit } from '../assets/Skill/iconGit';
 
 const icons = [
-    { Component: FlowbiteCssSolid, alt: "CSS" },
-    { Component: FlowbiteHtmlSolid, alt: "HTML" },
+    { Component: FlowbiteCssSolid, alt: "CSS3" },
+    { Component: FlowbiteHtmlSolid, alt: "HTML5" },
     { Component: MdiReact, alt: "React" },
     { Component: LineiconsJavascript, alt: "JavaScript" },
     { Component: MingcuteLinuxFill, alt: "Linux" },
-    { Component: MdiGit, alt: "Git" }
+    { Component: MdiGit, alt: "Git(hub)" }
 ];
 
 function Scroll() {
@@ -40,8 +40,11 @@ function Scroll() {
         <div className={styles.scroller} ref={scrollerRef}>
             <ul className={styles.scrollList}>
                 {icons.map(({ Component, alt }, index) => (
-                    <li key={`icon-${index}`}>
-                        <Component aria-label={alt} />
+                    <li key={`icon-${index}`} className = {styles.iconItem}>
+                        <div className={styles.iconContainer}>
+                            <Component aria-label={alt} />
+                            <span className={styles.iconLabel}>{alt}</span>
+                        </div>
                     </li>
                 ))}
             </ul>

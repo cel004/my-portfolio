@@ -21,6 +21,10 @@
 
 }
 
+.projectDescription {
+    text-align: justify; 
+}
+
 .gallery::-webkit-scrollbar {
     display: none; /* hide scrollbar */
 }

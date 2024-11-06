@@ -21,6 +21,36 @@
     justify-content: center;
 }
 
+.iconItem, .iconContainer {
+    position: relative;
+}
+
+.iconLabel {
+    position: absolute;
+    bottom: -25px; 
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s, visibility 0s 0.3s; 
+    font-size: 0.75rem;
+    color: #f0f0f0;
+    background-color: #292929;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.iconContainer:hover .iconLabel {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s, visibility 0s 0s; 
+}
+
+.iconContainer:hover {
+    cursor: pointer; 
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0);
