@@ -12,10 +12,10 @@ function App() {
 
   return(
     <>
-    <NightMode />
     <div id="section1">
-      <Aura />
+      <NightMode />
     </div>
+    <Aura />
     <Header />
     <Scroll />
     <Navigation />
