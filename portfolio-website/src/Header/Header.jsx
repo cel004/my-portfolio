@@ -8,7 +8,8 @@ function Header(){
     return(
         <header>
             <div className = {styles.title}>
-                <h1>Hi! I'm Celina!</h1>
+                <h1>Celina Nguyen</h1>
+                <p>| səˈliːnə ŋwiən˦ˀ˥ |</p>
                 <p>Software developer</p>
                 <div id = {styles.contacts}>celnguyens@gmail.com
                     <div className = {styles.socialIcons}>

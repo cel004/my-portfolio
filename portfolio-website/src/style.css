@@ -6,14 +6,11 @@
 
 @font-face{ 
 	font-family: 'Wotfard';
-	src: url('./assets/Wotfard/wotfard-regular-webfont.eot');
-	src: url('./assets/Wotfard/wotfard-regular-webfont.eot?#iefix') format('embedded-opentype'),
-	     url('./assets/Wotfard/wotfard-regular-webfont.woff2') format('woff'),
-	     url('./assets/Wotfard/wotfard-regular-webfont.ttf') format('truetype'),
+	src: url('./assets/Fonts/wotfard-regular-webfont.ttf') format('truetype')
 }
 
 body {
-    margin: 10px;
+    margin: 0.7rem;
     padding: 0;
     color-scheme: light dark;
     overflow: auto;

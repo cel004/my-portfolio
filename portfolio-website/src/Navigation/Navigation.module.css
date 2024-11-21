@@ -5,10 +5,22 @@
 }
 
 .centerNav {
+    margin-top: 1rem;
+    padding-bottom: 10rem;
     justify-content: space-around;
-    align-items: flex-start;
+    text-align: left;
+    gap: 1rem;
     font-size: 2rem;
     font-weight: bold;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1rem;
 
+}
+
+@font-face{ 
+	font-family: 'Bosch-Display';
+	src: url('../assets/Fonts/Bosch-Display.ttf') format('truetype')
+}
+
+.centerNav a, li {
+    font-family: 'Bosch-Display';
 }
