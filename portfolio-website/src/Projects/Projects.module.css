@@ -21,6 +21,11 @@
 
 }
 
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
 .projectDescription {
     text-align: justify; 
     font-weight: 500;

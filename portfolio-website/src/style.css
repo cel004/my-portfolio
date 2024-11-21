@@ -16,7 +16,11 @@ body {
     margin: 10px;
     padding: 0;
     color-scheme: light dark;
-    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;

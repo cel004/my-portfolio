@@ -7,6 +7,8 @@ import { MdiReact } from '../assets/Skill/iconReact';
 import { LineiconsJavascript } from '../assets/Skill/iconJS';
 import { MingcuteLinuxFill } from '../assets/Skill/iconLinux';
 import { MdiGit } from '../assets/Skill/iconGit';
+import { DeviconPlainCsharp } from '../assets/Skill/iconCSharp';
+import { TablerBrandMysql } from '../assets/Skill/iconMySQL';
 
 const icons = [
     { Component: FlowbiteCssSolid, alt: "CSS3" },
@@ -14,7 +16,9 @@ const icons = [
     { Component: MdiReact, alt: "React" },
     { Component: LineiconsJavascript, alt: "JavaScript" },
     { Component: MingcuteLinuxFill, alt: "Linux" },
-    { Component: MdiGit, alt: "Git(hub)" }
+    { Component: MdiGit, alt: "Git(hub)" },
+    { Component: DeviconPlainCsharp, alt: "C#"},
+    { Component: TablerBrandMysql, alt: "MySQL"}
 ];
 
 function Scroll() {

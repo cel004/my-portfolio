@@ -4,9 +4,9 @@ function Navigation(){
     return(
     <nav>
         <ol className = {styles.centerNav}>
-            <li><a href = "#">HOME</a></li>
-            <li><a href = "#">PROJECTS</a></li>
-            <li><a href = "#">CONTACT ✧˖° ⊹ ࣪ ˖</a></li>
+            <li><a href = "#section1">HOME</a></li>
+            <li><a href = "#section2">PROJECTS</a></li>
+            <li><a href = "#section3">CONTACT ✧˖° ⊹ ࣪ ˖</a></li>
         </ol>
         </nav>
     )

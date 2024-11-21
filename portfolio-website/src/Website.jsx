@@ -13,12 +13,19 @@ function App() {
   return(
     <>
     <NightMode />
-    <Aura />
+    <div id="section1">
+      <Aura />
+    </div>
     <Header />
     <Scroll />
     <Navigation />
-    <Projects />
+    <div id="section2">
+      <Projects />
+    </div>
+      <div id="section3">
     <ContactForm />
+    </div>
+    
     <Footer />
     </>
     
