@@ -1,0 +1,56 @@
+.scroller {
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.galleryList {
+    margin-top: -0.2rem;
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    width: max-content;
+}
+
+.galleryList li {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
+
+.scroller[data-animated="true"] .galleryList {
+    animation: scroll 40s linear infinite; 
+}
+
+.scroller::before,
+.scroller::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50px;
+    z-index: 2;
+}
+
+.scroller::before {
+    left: 0;
+    background: linear-gradient(to right, var(--background-color), transparent);
+}
+
+.scroller::after {
+    right: 0;
+    background: linear-gradient(to left, var(--background-color), transparent);
+}

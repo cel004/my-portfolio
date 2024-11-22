@@ -4,7 +4,7 @@ import Aura from './Aura/Aura.jsx'
 import Navigation from './Navigation/Navigation.jsx'
 import NightMode from './NightMode/NightMode.jsx'
 import Scroll from './Scroll/Scroll.jsx'
-import Projects from './Projects/Projects.jsx'
+import ProjectScroller from './Projects/ProjectScroller.jsx'
 import ContactForm from './ContactForm/ContactForm.jsx'
 import useLocalStorage from "use-local-storage";
 
@@ -22,7 +22,7 @@ function App() {
     <Scroll />
     <Navigation />
     <div id="section2">
-      <Projects />
+      <ProjectScroller />
     </div>
       <div id="section3">
     <ContactForm />
