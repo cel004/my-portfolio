@@ -1,3 +1,8 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .sectionEmail,
 ul {
     display: flex;
@@ -46,12 +51,46 @@ ul {
     align-items: center;
 }
 
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.phonetics {
+    font-size: 1.2rem;
+    margin-top: -1.2rem;
+    background-color: transparent;
+}
+
 .title > * {
     margin: 0;
 }
 
-h1 {
+.name p{
+    margin: 0;
     font-weight: 600;
     font-size: 2.4rem;
     font-family: 'Bosch-Display';
+}
+
+.descriptionHeader {
+    display: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -0.7rem;
+    
+}
+
+.descriptionHeader p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#contacts {
+    margin-top: -0.2rem;
 }

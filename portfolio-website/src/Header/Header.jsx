@@ -8,14 +8,18 @@ function Header(){
     return(
         <header>
             <div className = {styles.title}>
-                <h1>Celina Nguyen</h1>
-                <p><em>| səˈliːnə ŋwiən˦ˀ˥ |</em></p>
-                <p>software developer</p>
-                <div id = {styles.contacts}>celnguyens@gmail.com
-                    <div className = {styles.socialIcons}>
+                <div className={styles.nameContainer}>
+                <div className={styles.name}><p>Celina Nguyen</p></div>
+                <div className={styles.phonetics}><p><em>| səˈliːnə ŋwiən˦ˀ˥ |</em></p></div>
+            </div>
+                <div className={styles.descriptionHeader}>
+                    <p>software developer</p>
+                    <div id = {styles.contacts}>celnguyens@gmail.com
+                        <div className = {styles.socialIcons}>
                         <div className = {styles.socialIconsContainer}>
-                        <div className={styles.githubkitty}><a href="https://github.com/cel004" target="_blank"  rel="noopener noreferrer"><LineMdGithub /></a></div>
                             <a href="https://www.linkedin.com/in/cel-nguyen/" target="_blank"  rel="noopener noreferrer"><LineMdLinkedin /></a>
+                            <div className={styles.githubkitty}><a href="https://github.com/cel004" target="_blank"  rel="noopener noreferrer"><LineMdGithub /></a></div>
+                        </div>
                         </div>
                     </div>
                 </div>
