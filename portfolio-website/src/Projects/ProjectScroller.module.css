@@ -5,6 +5,9 @@
     justify-content: center;
     margin: 0 auto;
     background-color: transparent;
+
+    /* -webkit-overflow-scrolling: touch; 
+    overflow-x: auto;  */
 }
 
 .galleryList {

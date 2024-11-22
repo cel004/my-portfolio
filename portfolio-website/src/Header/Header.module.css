@@ -27,6 +27,7 @@ ul {
 
 .socialIcons {
     width: auto;
+    padding-left: 0.3rem;
     justify-content: center;
     align-items: center;
 }
