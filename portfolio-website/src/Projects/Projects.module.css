@@ -5,8 +5,9 @@
 .gallery {
     display: flex;
     overflow-x: auto;
-    gap: 10px;
-    padding: 10px 0;
+    gap: 1rem; 
+    padding: 1rem 0;
+    position: relative;
 }
 
 .galleryList {
@@ -18,7 +19,7 @@
     max-width: 80%;
     height: auto;
     flex-shrink: 0;
-
+    margin-right: 1rem; 
 }
 
 img {

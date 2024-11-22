@@ -1,8 +1,26 @@
-* {
-    color: #292929;
-    background-color: #f0f0f0;
-    /* #eae3d8 */
+*, body {
+    color: var(--color);
+    background-color: var(--background-color);
     font-family: 'Wotfard', Arial, sans-serif; 
+}
+
+body {
+    height: 100vh;
+}
+
+.Website {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+:root {
+    --background-color: #f0f0f0;
+    --color: #161616;
+
+  }
+  
+[data-theme="dark"] {
+    --background-color: #161616;
+    --color: #dddddd;
 }
 
 @font-face{ 
@@ -10,12 +28,11 @@
 	src: url('./assets/Fonts/wotfard-regular-webfont.ttf') format('truetype')
 }
 
-body {
+/* body {
     margin: 0.7rem;
     padding: 0;
-    color-scheme: light dark;
     overflow: auto;
-}
+} */
 
 ::-webkit-scrollbar {
     display: none;
@@ -23,7 +40,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 100px;
+    /* scroll-padding-top: 100px; */
 }
 
 a {

@@ -4,12 +4,10 @@ import styles from './NightMode.module.css'
 import { LineMdMoonRisingAltLoop } from '../assets/iconMoon';
 import { LineMdSunRisingLoop } from '../assets/iconSun';
 
-const NightMode = () => {
-    const [isNightMode, setIsNightMode] = useState(false);
-
+const NightMode = ({ isNightMode, setIsNightMode }) => {
     const toggleNightMode = () => {
-        setIsNightMode((prev) => !prev);
-        document.body.classList.toggle('night-mode', !isNightMode);
+      setIsNightMode(!isNightMode); // Toggle the state
+      console.log("Toggling night mode:", !isNightMode);
     };
 
     return(
