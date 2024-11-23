@@ -17,10 +17,11 @@
 }
 
 @font-face{ 
-	font-family: 'Bosch-Display';
-	src: url('../assets/Fonts/Bosch-Display.ttf') format('truetype')
+	font-family: 'ClashDisplay-Variable';
+	src: url('../assets/Fonts/ClashDisplay-Variable.ttf') format('truetype')
 }
 
 .centerNav a, li {
-    font-family: 'Bosch-Display';
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 500;
 }

@@ -72,9 +72,9 @@ ul {
 
 .name p{
     margin: 0;
-    font-weight: 600;
     font-size: 2.4rem;
-    font-family: 'Bosch-Display';
+    font-family: 'ClashDisplay-Variable';
+    font-weight: 500;
 }
 
 .descriptionHeader {
