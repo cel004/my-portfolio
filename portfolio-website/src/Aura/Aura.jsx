@@ -10,7 +10,6 @@ function Aura() {
                 <div className={styles.auraLayer3}></div>
                 <div className={styles.auraLayer4}></div>
                 <div className={styles.auraLayer5}></div>
-                <div className={styles.shimmer}></div>
             </div>
         </div>
     );

@@ -3,6 +3,7 @@
   width: 17rem;
   height: 17rem;
   margin: 0 auto;
+  opacity: 80%;
   padding: 2rem;
 }
 
@@ -12,7 +13,10 @@
   height: 100%;
   border-radius: 50%;
   overflow: hidden; 
-  filter: blur(0.5rem);
+  filter: blur(0.5rem) var(--saturate);
+  border: 1px solid #9270af;
+  mix-blend-mode: var(--blend-mode);
+  opacity: var(--opacity);
 }
 
 .auraLayer1 {

@@ -5,6 +5,7 @@
 }
 
 body {
+    width: 100vw;
     height: 100vh;
 }
 
@@ -12,15 +13,22 @@ body {
     background-color: var(--background-color);
     color: var(--color);
 }
+
 :root {
     --background-color: #f0f0f0;
     --color: #161616;
-
+    --blend-mode: normal;
+    --opacity: 90%;
+    --saturate: saturate(3);
   }
   
 [data-theme="dark"] {
     --background-color: #161616;
-    --color: #dddddd;
+    --color: #cecece;
+    --blend-mode: hard-light;
+    /* difference, hard-light, color-dodge*/
+    --opacity: 90%;
+    --filter: saturate(1);
 }
 
 @font-face{ 

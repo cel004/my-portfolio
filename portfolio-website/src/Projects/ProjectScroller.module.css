@@ -10,6 +10,10 @@
     overflow-x: auto;  */
 }
 
+.projectCard, h2 {
+    margin: 1rem;
+}
+
 .galleryList {
     margin-top: -0.2rem;
     display: flex;
