@@ -28,12 +28,6 @@ body {
 	src: url('./assets/Fonts/wotfard-regular-webfont.ttf') format('truetype')
 }
 
-/* body {
-    margin: 0.7rem;
-    padding: 0;
-    overflow: auto;
-} */
-
 ::-webkit-scrollbar {
     display: none;
 }
