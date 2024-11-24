@@ -1,11 +1,9 @@
 .auraWrapper {
   position: relative;
-  width: 15rem;
-  height: 15rem;
+  width: 17rem;
+  height: 17rem;
   margin: 0 auto;
   padding: 2rem;
-
-  filter: blur(0.8rem);
 }
 
 .circleContainer {
@@ -13,20 +11,17 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  overflow: hidden;
-  filter: blur(0.8rem);
-  opacity: 70%;
+  overflow: hidden; 
+  filter: blur(0.5rem);
 }
 
 .auraLayer1 {
   position: absolute;
   width: 20rem;
   height: 20rem;
-  top: -50%;
-  left: -50%;
-  background: linear-gradient(160deg, #e2beff, #d0ffd4, #ffc8f1);
-
-  filter: blur(2rem);
+  background: linear-gradient(160deg, #d9aaff, #aeffb5, #ffb1ec);
+  filter: blur(1rem);
+  opacity: 40%;
   animation: rotateAura1 10s linear infinite;
 
 }
@@ -35,11 +30,11 @@
   position: absolute;
   width: 20rem;
   height: 20rem;
-  top: 50%;
-  left: 50%;
+  top: 30%;
+  right: 20%;
   background: linear-gradient(80deg, #b9a6ff, #bdfaff, #fffecb, #f3b8ff);
 
-  filter: blur(2rem);
+  filter: blur(1rem);
   animation: rotateAura 20s linear infinite;
 }
 
@@ -47,9 +42,7 @@
   position: absolute;
   width: 20rem;
   height: 20rem;
-  top: 50%;
-  left: 50%;
-  background: linear-gradient(80deg, #f7ffcc, #bdfaff, #f3b8ff);
+  background: linear-gradient(80deg, #f6ffc0, #bdfaff, #f3b8ff);
 
   filter: blur(2rem);
   animation: rotateAura 10s linear infinite;
@@ -57,16 +50,13 @@
 
 .auraLayer4 {
   position: absolute;
-  width: 20rem;
-  height: 20rem;
-  top: 50%;
-  left: 50%;
-  background: linear-gradient(160deg, #b9a6ff, #bdfaff, #ffddf7, #f3b8ff);
+  width: 10rem;
+  height: 10rem;
+  background: linear-gradient(160deg, #b9a6ff, #bdfaff, #ffbaef, #f3b8ff);
 
   filter: blur(2rem);
   animation: rotateAura 20s linear infinite;
 }
-
 
 @keyframes rotateAura {
   0% {
