@@ -25,3 +25,19 @@
     font-family: 'ClashDisplay-Variable';
     font-weight: 500;
 }
+
+li:hover, a:hover {
+    animation: hoverEffect 0.2s ease-in forwards;
+}
+
+@keyframes hoverEffect{
+    0% {
+        font-weight: 500;
+        transform: translateX(0);
+    }
+    100% {
+        font-weight: 600;
+        transform: translateX(3%);
+    }
+}
+
