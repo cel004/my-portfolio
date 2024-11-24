@@ -26,7 +26,7 @@
     font-weight: 500;
 }
 
-li:hover, a:hover {
+.centerNav li:hover, .centerNav a:hover {
     animation: hoverEffect 0.2s ease-in forwards;
 }
 
