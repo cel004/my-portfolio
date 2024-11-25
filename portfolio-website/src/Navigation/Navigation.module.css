@@ -24,6 +24,7 @@
 .centerNav a, li {
     font-family: 'ClashDisplay-Variable';
     font-weight: 500;
+    animation: unhoverEffect 0.2s ease-in forwards;
 }
 
 .centerNav li:hover, .centerNav a:hover {
@@ -41,3 +42,13 @@
     }
 }
 
+@keyframes unhoverEffect{
+    0% {
+        font-weight: 600;
+        transform: translateX(3%);
+    }
+    100% {
+        font-weight: 500;
+        transform: translateX(0);
+    }
+}
