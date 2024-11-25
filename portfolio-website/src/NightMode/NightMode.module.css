@@ -1,6 +1,12 @@
 .button {
     border: none;
-    width: 9.5%;
+    max-width: 9.5%;
     margin: 1rem;
     cursor: pointer;
+}
+
+@media(min-width: 1024px){
+    .button {
+        max-width: 2%;
+    }
 }
