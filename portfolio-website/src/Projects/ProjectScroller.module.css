@@ -1,19 +1,18 @@
 .scroller {
-    overflow: hidden;
     width: 100vw;
     position: relative;
     justify-content: center;
     margin: 0 auto;
     background-color: transparent;
 
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; 
-    overflow-x: auto; 
+    /* overflow-x: auto; 
+    scroll-behavior: smooth; 
+    -webkit-overflow-scrolling: touch;  */
 }
 
-.scroller::-webkit-scrollbar{
-    height: 100%;
-}
+/* .scroller::-webkit-scrollbar {
+    height: 8px; 
+} */
 
 .projectCard, h2 {
     margin: 1rem;
@@ -22,8 +21,8 @@
 .galleryList {
     margin-top: -0.2rem;
     display: flex;
-
     width: max-content;
+    overflow-x: auto; 
 }
 
 .galleryList li {
@@ -38,7 +37,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); 
+        transform: translateX(-50%);
     }
 }
 

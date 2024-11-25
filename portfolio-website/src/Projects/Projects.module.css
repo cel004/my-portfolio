@@ -1,16 +1,17 @@
-
-
 .gallery {
     display: flex;
     overflow-x: auto;
     gap: 1rem;
     padding: 1rem 0;
     position: relative;
+    
 }
 
 .galleryList {
     display: flex;
     width: max-content;
+    
+
 }
 
 .gallery img {
@@ -21,5 +22,7 @@
 }
 
 .gallery::-webkit-scrollbar {
-    display: none; /* hide scrollbar */
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
+    -webkit-overflow-scrolling: touch; 
 }

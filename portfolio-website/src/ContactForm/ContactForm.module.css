@@ -84,7 +84,7 @@ textarea {
 
 .successMessage {
     text-align: center;
-    width: 103%;
-    font-size: 1rem;
-    margin-top: 5px;
+    font-size: 1.4rem;
+    padding-top: 8rem;
+    padding-bottom: 15.6rem;
 }
