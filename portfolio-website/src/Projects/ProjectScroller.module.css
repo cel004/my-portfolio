@@ -32,6 +32,10 @@
     justify-content: center;
 }
 
+.projectDescription {
+    margin-top: -1rem;
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(0);

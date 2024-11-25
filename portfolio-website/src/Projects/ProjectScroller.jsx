@@ -23,9 +23,10 @@ function ProjectScroller() {
 	<>
 	<h2>Projects</h2>
     <div className={styles.projectCard}>
-        <h3>Project Name</h3>
+        <h3>Fruitful</h3>
             <p className={styles.projectDescription}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et felis nec ligula bibendum placerat. In consectetur neque at erat tincidunt, ac tempor dolor tristique.
+            A full-stack budgeting app that allows users 
+            to track and manage finances with secure data storage.
             </p>
         </div>
         <div className={styles.scroller} ref={galleryRef}>
