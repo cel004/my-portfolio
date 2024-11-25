@@ -16,7 +16,7 @@ const icons = [
     { Component: MdiReact, alt: "React" },
     { Component: LineiconsJavascript, alt: "JavaScript" },
     { Component: MingcuteLinuxFill, alt: "Linux" },
-    { Component: MdiGit, alt: "Git(hub)" },
+    { Component: MdiGit, alt: "Git" },
     { Component: DeviconPlainCsharp, alt: "C#"},
     { Component: TablerBrandMysql, alt: "MySQL"}
 ];
