@@ -6,8 +6,13 @@
     margin: 0 auto;
     background-color: transparent;
 
-    /* -webkit-overflow-scrolling: touch; 
-    overflow-x: auto;  */
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; 
+    overflow-x: auto; 
+}
+
+.scroller::-webkit-scrollbar{
+    height: 100%;
 }
 
 .projectCard, h2 {
@@ -49,6 +54,7 @@
     height: 100%;
     width: 50px;
     z-index: 2;
+    pointer-events: none;
 }
 
 .scroller::before {
