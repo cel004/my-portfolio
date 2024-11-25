@@ -80,3 +80,23 @@
     transform: rotate(0deg);
   }
 }
+
+@media(min-width: 1024px){
+  .auraWrapper {
+    width: 25rem;
+    height: 25rem;
+  }
+  .auraLayer1,  
+  .auraLayer3 {
+    width: 28rem;
+    height: 28rem;
+  }
+  .auraLayer2 {
+    top: 38%;
+    right: 28%;
+  }
+  .auraLayer4 {
+    width: 18rem;
+    height: 18rem;
+  }
+}
