@@ -3,6 +3,7 @@
     max-width: 9.5%;
     margin: 1rem;
     cursor: pointer;
+    margin-bottom: -1rem;
 }
 
 @media(min-width: 1024px){
