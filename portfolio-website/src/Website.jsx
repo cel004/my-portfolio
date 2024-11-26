@@ -3,7 +3,6 @@ import Footer from './Footer/Footer.jsx'
 import Aura from './Aura/Aura.jsx'
 import Navigation from './Navigation/Navigation.jsx'
 import NightMode from './NightMode/NightMode.jsx'
-import Scroll from './Scroll/Scroll.jsx'
 import ProjectScroller from './Projects/ProjectScroller.jsx'
 import ContactForm from './ContactForm/ContactForm.jsx'
 import useLocalStorage from "use-local-storage";
@@ -15,17 +14,22 @@ function App() {
   return(
   <div className="Website" data-theme={isNightMode ? "dark" : "light"}>
     <div id="section1">
-    <NightMode isNightMode={isNightMode} setIsNightMode={setIsNightMode} />
+      <NightMode isNightMode={isNightMode} setIsNightMode={setIsNightMode}/>
     </div>
-    <Aura />
-    <Header />
-    <Scroll />
-    <Navigation />
-    <div id="section2">
-      <ProjectScroller />
+    <div className="desktopHeader">
+      <Aura />
+      <div className="header">
+        <Header />
+      </div>
     </div>
+    <div className ="body">
+      <Navigation />
+      <div id="section2">
+        <ProjectScroller />
+      </div>
       <div id="section3">
-    <ContactForm />
+        <ContactForm />
+      </div>
     </div>
     
     <Footer />

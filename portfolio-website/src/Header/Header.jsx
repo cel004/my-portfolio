@@ -1,4 +1,5 @@
 import styles from './Header.module.css'
+import Scroll from '../Scroll/Scroll.jsx'
 
 import { LineMdLinkedin } from '../assets/Contact/iconLinkedin';
 import { LineMdGithub } from '../assets/Contact/iconGithub';
@@ -14,7 +15,7 @@ function Header(){
             </div>
                 <div className={styles.descriptionHeader}>
                     <p>software developer</p>
-                    <div id = {styles.contacts}>celnguyens@gmail.com
+                    <div id = {styles.contacts}><p>celnguyens@gmail.com</p>
                         <div className = {styles.socialIcons}>
                         <div className = {styles.socialIconsContainer}>
                             <a href="https://www.linkedin.com/in/cel-nguyen/" target="_blank"  rel="noopener noreferrer"><LineMdLinkedin /></a>
@@ -23,14 +24,8 @@ function Header(){
                         </div>
                     </div>
                 </div>
+                <Scroll/>
             </div>
-            
-            {/* <div className = {styles.sectionEmail}>
-                
-                
-            </div> */}
-                
-            
         </header>
     )
 }

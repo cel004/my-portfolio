@@ -52,3 +52,38 @@
         transform: translateX(0);
     }
 }
+
+@keyframes DT_hoverEffect{
+    0% {
+        font-weight: 500;    }
+    100% {
+        font-weight: 600;
+    }
+}
+
+@keyframes DT_unhoverEffect{
+    0% {
+        font-weight: 600;
+    }
+    100% {
+        font-weight: 500;
+    }
+}
+
+@media(min-width: 1024px){
+    .centerNav {
+        font-size: 3.2rem;
+        margin: 2rem;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        animation: DT_unhoverEffect 0.2s ease-in forwards;
+    }
+    .centerNav:hover {
+        font-size: 3.2rem;
+        display: flex;
+        flex-direction: row;
+        animation: DT_hoverEffect 0.2s ease-in forwards;
+    }
+}
