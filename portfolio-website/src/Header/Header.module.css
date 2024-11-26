@@ -19,7 +19,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-top: -0.2rem;
 }
 
 .socialIconsContainer {
@@ -89,8 +89,6 @@ ul {
     justify-content: center;
     text-align: center;
     margin-top: -1.1rem;
-    
-    
 }
 
 .descriptionHeader p {
@@ -99,8 +97,18 @@ ul {
     font-size: 1.1rem;
 }
 
-#contacts {
-    margin-top: -0.2rem;
+#contacts p {
+    font-weight: 500;
+}
+
+.aboutMe p {
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 @media(min-width: 1024px){

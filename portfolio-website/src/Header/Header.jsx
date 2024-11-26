@@ -25,6 +25,12 @@ function Header(){
                     </div>
                 </div>
                 <Scroll/>
+                <div className={styles.aboutMe}><p>I’m a self-taught developer 
+                    specializing in building & designing software applications—and 
+                    everything in between.</p>
+                    <p>I put my heart into every project, making sure everything
+                    is juuuuust right.</p>
+                </div>
             </div>
         </header>
     )
