@@ -50,14 +50,19 @@ a {
 }
 
 @media(min-width: 1024px){
+    .Website {
+        overflow: hidden;
+    }
     .desktopHeader {
+        padding-top: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10rem;
     }
     .body {
-        padding: 10rem;
+        margin-top: -6rem;
+        padding: 8rem;
     }
 
 }
