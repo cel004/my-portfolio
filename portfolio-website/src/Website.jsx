@@ -5,6 +5,7 @@ import Navigation from './Navigation/Navigation.jsx'
 import NightMode from './NightMode/NightMode.jsx'
 import ProjectScroller from './Projects/ProjectScroller.jsx'
 import ContactForm from './ContactForm/ContactForm.jsx'
+import UpArrow from './UpArrow/UpArrow.jsx'
 import useLocalStorage from "use-local-storage";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
 
   return(
   <div className="Website" data-theme={isNightMode ? "dark" : "light"}>
+    <UpArrow />
     <div id="section1">
       <NightMode isNightMode={isNightMode} setIsNightMode={setIsNightMode}/>
     </div>

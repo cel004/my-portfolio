@@ -25,11 +25,13 @@ function Header(){
                     </div>
                 </div>
                 <Scroll/>
-                <div className={styles.aboutMe}><p>I’m a self-taught developer 
-                    specializing in building & designing software applications—and 
-                    everything in between.</p>
-                    <p>I put my heart into every project, making sure everything
-                    is juuuuust right.</p>
+                <div className={styles.aboutMe}>
+                    
+                    <p className ={styles.aboutMe1}>I’m a self-taught developer 
+                    specializing in building & designing software applications—and everything in between.</p>
+                    
+                    <p className ={styles.aboutMe1}>I put my heart into every project, making sure everything
+                    is <span style={{fontStyle: "italic"}}>juuuuust</span> right.</p>
                 </div>
             </div>
         </header>
