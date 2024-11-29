@@ -37,3 +37,11 @@ svg {
         transform: scale(1.00);
     }
 }
+
+@media(min-width: 1024px){
+    .upArrow {
+        max-width: 2.5%;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}

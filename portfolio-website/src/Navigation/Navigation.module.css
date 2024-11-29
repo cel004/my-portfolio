@@ -14,7 +14,6 @@
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-
 }
 
 @font-face{ 
@@ -74,12 +73,16 @@
 @media(min-width: 1024px){
     .centerNav {
         font-size: 3.2rem;
-        margin: 0;
-        padding-top: 2rem;
+        margin: 1rem 0 0 0;
+        padding-top: 1rem;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+        gap: 13rem;
         animation: DT_unhoverEffect 0.2s ease-in forwards;
+    }
+    .centerNav li, .centerNav a {
+        min-width: 15rem;
     }
     .centerNav:hover {
         font-size: 3.2rem;
