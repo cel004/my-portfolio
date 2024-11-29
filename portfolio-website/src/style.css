@@ -60,11 +60,10 @@ a {
         overflow: hidden;
     }
     .desktopHeader {
-        padding-top: 5rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10rem;
+        gap: 15rem;
     }
     .body {
         margin-top: -6rem;
