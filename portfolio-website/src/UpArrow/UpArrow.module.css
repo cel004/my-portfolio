@@ -1,0 +1,38 @@
+svg {
+    background-color: transparent;
+}
+
+.upArrow {
+    position: fixed;
+    z-index: 10;
+    border: none;
+    
+    bottom: 0.5rem;
+    right: 0.5rem;
+    max-width: 10%;
+    margin: 1rem;
+    cursor: pointer;
+    animation: unhoverEffect 0.2s ease-in forwards;
+}
+
+.upArrow:hover{
+    animation: hoverEffect 0.2s ease-in forwards;
+}
+
+@keyframes hoverEffect{
+    0%{
+        transform: scale(1.00);
+    }
+    100%{
+        transform: scale(1.10);
+    }
+}
+
+@keyframes unhoverEffect{
+    0%{
+        transform: scale(1.10);
+    }
+    100%{
+        transform: scale(1.00);
+    }
+}

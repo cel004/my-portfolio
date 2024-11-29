@@ -14,7 +14,9 @@ function App() {
 
   return(
   <div className="Website" data-theme={isNightMode ? "dark" : "light"}>
-    <UpArrow />
+    <div className="arrowButton">
+      <UpArrow />
+    </div>
     <div id="section1">
       <NightMode isNightMode={isNightMode} setIsNightMode={setIsNightMode}/>
     </div>

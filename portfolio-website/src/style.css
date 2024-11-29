@@ -9,6 +9,10 @@ body {
     height: 100vh;
 }
 
+.arrowButton {
+    background-color: transparent !important;
+}
+
 .Website {
     background-color: var(--background-color);
     color: var(--color);
