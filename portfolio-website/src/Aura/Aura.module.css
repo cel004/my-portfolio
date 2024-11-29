@@ -1,12 +1,13 @@
 .auraWrapper {
   position: relative;
-  background-color: transparent !important;
   width: 17rem;
   height: 17rem;
-  margin: -0.6rem auto;
+  margin: -0.3rem auto;
   opacity: 80%;
   padding: 2rem;
   margin-top: -1rem;
+  border-radius: 50%;
+
 }
 
 .circleContainer {
