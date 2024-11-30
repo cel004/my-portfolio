@@ -73,6 +73,16 @@
     pointer-events: none;
 }
 
+.scroller::before {
+    left: 0;
+    background: linear-gradient(to right, var(--background-color), transparent);
+}
+
+.scroller::after {
+    right: 0;
+    background: linear-gradient(to left, var(--background-color), transparent);
+}
+
 h2 {
     font-family: 'ClashDisplay-Variable';
     font-weight: 500;
