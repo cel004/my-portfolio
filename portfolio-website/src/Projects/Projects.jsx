@@ -7,7 +7,7 @@ function Projects(){
 
     return(
         <div className={styles.projectContainer}>
-        <div className={styles.gallery} ref={galleryRef}>
+        <div className={styles.gallery}>
             <div className={styles.galleryList}>
                 <img src={placeholderImage} alt="project screenshot 1" />
                 <img src={placeholderImage} alt="project screenshot 2" />

@@ -13,22 +13,6 @@ import { TablerBrandMysql } from '../assets/Skill/iconMySQL';
 import { Chartjs } from '../assets/Skill/iconChartJS';
 
 function ProjectScroller() {
-    const galleryRef = useRef(null);
-
-    useEffect(() => {
-        const scroller = galleryRef.current;
-        if (!scroller) return;
-
-        scroller.setAttribute("data-animated", "true");
-        const scrollerInner = scroller.querySelector(`.${styles.galleryList}`);
-        
-        Array.from(scrollerInner.children).forEach(item => {
-            const clone = item.cloneNode(true);
-            scrollerInner.appendChild(clone);
-        });
-        return () => scroller.removeAttribute("data-animated");
-    }, []);
-
     return (
 	<>
 	<h2>Projects</h2>
@@ -44,7 +28,7 @@ function ProjectScroller() {
             to track and manage finances with secure data storage.
             </p>
         </div>
-        <div className={styles.scroller} ref={galleryRef}>
+        <div className={styles.scroller}>
             <div className={styles.galleryList}>
                 <Projects />
             </div>

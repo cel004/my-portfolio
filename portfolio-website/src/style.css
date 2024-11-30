@@ -70,5 +70,8 @@ a {
     #section1 {
         margin: 1rem;
     }
+    .galleryList {
+        max-width: 100vw;
+    }
 
 }
