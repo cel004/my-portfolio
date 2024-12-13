@@ -29,7 +29,7 @@ function App() {
     <div className ="body">
       <Navigation />
       <div id="section2">
-        <ProjectScroller />
+        {/* <ProjectScroller /> */}
       </div>
       <div id="section3">
         <ContactForm />
