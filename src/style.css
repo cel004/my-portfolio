@@ -1,0 +1,80 @@
+*, body {
+    color: var(--color);
+    background-color: var(--background-color);
+    font-family: 'Wotfard', Arial, sans-serif; 
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.arrowButton {
+    background-color: transparent !important;
+}
+
+.Website {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+:root {
+    --background-color: #f0f0f0;
+    --color: #161616;
+    --blend-mode: normal;
+    --opacity: 90%;
+    --saturate: saturate(3);
+}
+
+[data-theme="dark"] {
+    --background-color: #161616;
+    --color: #cecece;
+    --blend-mode: hard-light;
+    /* difference, hard-light, color-dodge*/
+    --opacity: 90%;
+    --filter: saturate(1);
+}
+
+@font-face{ 
+	font-family: 'Wotfard';
+	src: url('./assets/Fonts/wotfard-regular-webfont.ttf') format('truetype')
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 100px; */
+}
+
+a {
+    text-decoration: none;
+}
+
+@media(min-width: 1024px){
+    .Website {
+        overflow: hidden;
+    }
+    .desktopHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15rem;
+    }
+    .body {
+        margin-top: -6rem;
+        padding: 8rem;
+    }
+    #section1 {
+        margin: 1rem;
+    }
+    .galleryList {
+        max-width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
