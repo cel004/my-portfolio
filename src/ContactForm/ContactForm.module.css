@@ -22,7 +22,6 @@
 
 .formContainer {
     max-width: 13rem;
-
 }
 
 .subTitle {
@@ -87,4 +86,32 @@ textarea {
     font-size: 1.4rem;
     padding-top: 8rem;
     padding-bottom: 15.6rem;
+}
+
+@media(min-width: 1024px){
+    .title h2 {
+        font-size: 3rem;
+    }
+    .subTitle {
+        font-size: 1.4rem;
+    }
+    label {
+        font-size: 1.3rem;
+    }
+    textarea {
+        max-width: 100%;
+        height: 200px;
+        resize: vertical;
+        font-size: 1.2rem;
+    }
+    input[type="text"], input[type="email"] {
+        font-size: 1.2rem;
+    }
+    .formContainer {
+        max-width: 20rem;
+    }
+    input[type=submit] {
+        width: 50%;
+        font-size: 1rem;
+    }
 }

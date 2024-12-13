@@ -28,10 +28,8 @@ function ProjectScroller() {
             to track and manage finances with secure data storage.
             </p>
         </div>
-        <div className={styles.scroller}>
             <div className={styles.galleryList}>
                 <Projects />
-            </div>
         </div>
 </>
     );

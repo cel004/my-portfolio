@@ -70,11 +70,18 @@ a {
     #section1 {
         margin: 1rem;
     }
+    #section2 {
+        padding: 0;
+    }
     .galleryList {
         max-width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0
+    }
+    .gallery {
+        padding: 0;
     }
 
 }
